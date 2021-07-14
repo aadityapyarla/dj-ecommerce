@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Aaditya Pyarla</title>
+    <link rel="shortcut icon" href="{% static 'images/shopping.png' %}" type="image/x-icon">
+    
+    {% block css_links %}
+        
+    {% endblock css_links %}
+
+    <!-- Defualt css links -->
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+    
+    
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <a class="navbar-brand col-md-3 align-items-center d-flex justify-content-center" href="/" style="font-size: 25px;">
+            <img src="https://www.getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="auto" height="40" class="d-inline-block align-text-top">
+            &nbsp;&nbsp;Bootstrap
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-md-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: auto;">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'cart' %}">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'checkout' %}">Checkout</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'admin' %}">Admin</a></li>
+                    <li><a class="dropdown-item" href="{% url 'detail' %}">Product Detail</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <div class="list-inline-item" style="margin-right: 2% !important;"><button class="btn btn-light btn-circle btn-circle-sm m-1 search-open"><i class="fa fa-search"></i></button></div>
+            </li>
+        </ul>
+        </div>
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
+            <div class="dropdown" style="margin-right: 4%;">
+                <a href="#" class="d-flex align-items-center dropdown-toggle link-light text-decoration-none" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://avatars.githubusercontent.com/u/85735115?v=4" width="40" height="32" alt="" style="border-radius: 50%;width: auto; height: 38px; aspect-ratio: 35 / 32;">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownNavLink">
+                <li><a class="dropdown-item " href="#" aria-current="page">Overview</a></li>
+                <li><a class="dropdown-item" href="#">Inventory</a></li>
+                <li><a class="dropdown-item" href="#">Customers</a></li>
+                <li><a class="dropdown-item" href="#">Products</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Reports</a></li>
+                <li><a class="dropdown-item" href="#">Analytics</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-light" style="margin-right: 3% !important;">Login</button>     
+            <button type="button" class="btn btn-warning">Sign-up</button>
+            <div class="list-inline-item mr-3" style="margin-right: 3% !important;"></div>
+                <button class="btn btn-circle btn-circle m-1 position-relative">
+                    <a href="{% url 'cart' %}">
+                        <img  id="cart-icon" src="{% static 'images/cart.png' %}" style="margin-bottom: 4px;"> 
+                        <span class="position-absolute top-5 translate-middle badge rounded-pill bg-danger"
+                        style="border-radius: 50% !important;top: 7px !important;left: 85%!important; height: 22px; background-color: red !important;">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+                </button>
+            </div>
+        </div>
+<div class="search-panel" id="searchpanel">
+    <div class="search-inner d-flex align-items-center justify-content-center">
+    <div class="close-btn" id="closesearch">Close <i class="fa fa-close"></i></div>
+    <form id="searchForm" action="{% url 'search' %}">
+        <div class="form-group">
+        <input type="search" class="from-control border-0 " name="search" placeholder="What are you searching for..." autofocus>
+        <button type="submit" class="submit">Search</button>
+        </div>
+    </form>
+    </div>
+</div> 
+</nav>
+    
+        
+
+
+    {% block content %}
+        
+    {% endblock content %}
+
+    
+    
+<footer class="bg-dark pt-5">
+    <div class="container py-5">
+        <div class="row py-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
+            <h2><a class="navbar-brand" href="/" style="font-size: 2.25rem !important;">
+                <img src="https://www.getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
+                Bootstrap
+            </a></h2>
+            <p class="font-italic text-muted">Nulla vel vestibulum ipsum. Aenean non iaculis leo, id tempus ante. Vivamus commodo vehicula diam ut porttitor. Proin bibendum ante id dolor vestibulum tristique. Proin porta </p>
+            <ul class="list-inline mt-4">
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4 text-white">Shop</h6>
+            <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">For Women</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">For Men</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Stores</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4 text-white">Company</h6>
+            <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Wishlist</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4 text-white">Newsletter</h6>
+            <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+            <div class="p-1 rounded border">
+            <div class="input-group">
+                <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Copyrights -->
+    <div class="bg-dark py-4">
+        <div class="container text-center">
+        <p class="text-muted mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+        
+    
+    {% block js_links %}
+        
+    {% endblock js_links %}
+    <script src="{% static 'js/navbar.js' %}"></script>
+</body>
+</html>

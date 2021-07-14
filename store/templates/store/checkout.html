@@ -1,0 +1,283 @@
+{% extends 'store/base.html' %}
+
+{% load static %}
+
+
+{% block css_links %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://pattern.kivan-works.com/fonts/kredit.css">
+    <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/paypal.css' %}">
+{% endblock css_links %}
+
+
+{% block content %}
+<div class="container">
+    <!-- HERO SECTION-->
+    <section class="py-5 bg-light">
+    <div class="container">
+        <div class="row px-4 px-lg-5 py-lg-4 align-items-center">
+        <div class="col-lg-6">
+            <h1 class="h2 text-uppercase mb-0">Checkout</h1>
+        </div>
+        <div class="col-lg-6 text-lg-right">
+            <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-lg-end mb-0 px-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="cart.html">Cart</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+            </ol>
+            </nav>
+        </div>
+        </div>
+    </div>
+    </section>
+    <section class="py-5">
+    <!-- BILLING ADDRESS-->
+        <h2 class="h4 text-uppercase mb-4">Billing Details</h2>
+    <div class="row">
+        <div class="col-lg-8">
+        <form action="#">
+            <div class="row">
+            <div class="col-lg-6 form-group">
+                <label class="text-small text-uppercase mb-3" for="firstName">First name</label>
+                <input class="form-control form-control-lg" id="firstName" type="text" placeholder="Enter your first name">
+            </div>
+            <div class="col-lg-6 form-group">
+                <label class="text-small text-uppercase mb-3" for="lastName">Last name</label>
+                <input class="form-control form-control-lg" id="lastName" type="text" placeholder="Enter your last name">
+            </div>
+            <div class="col-lg-6 form-group">
+                <label class="text-small text-uppercase mb-3" for="email">Email address</label>
+                <input class="form-control form-control-lg" id="email" type="email" placeholder="e.g. Jason@example.com">
+            </div>
+            <div class="col-lg-6 form-group">
+                <label class="text-small text-uppercase mb-3" for="phone">Phone number</label>
+                <input class="form-control form-control-lg" id="phone" type="tel" placeholder="e.g. +02 245354745">
+            </div>
+            <div class="col-lg-6 form-group">
+                <label class="text-small text-uppercase mb-3" for="company">Company name (optional)</label>
+                <input class="form-control form-control-lg" id="company" type="text" placeholder="Your company name">
+            </div>
+            <div class="col-lg-6 form-group">
+                <label class="text-small text-uppercase mb-3" for="country">Country</label>
+                <select class="form-select form-control form-control-lg" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-lg-12 form-group">
+                <label class="text-small text-uppercase mb-3" for="address">Address line 1</label>
+                <input class="form-control form-control-lg" id="address" type="text" placeholder="House number and street name">
+            </div>
+            <div class="col-lg-12 form-group">
+                <label class="text-small text-uppercase mb-3" for="address">Address line 2</label>
+                <input class="form-control form-control-lg" id="addressalt" type="text" placeholder="Apartment, Suite, Unit, etc (optional)">
+            </div>
+            <div class="col-lg-6 form-group">
+                <label class="text-small text-uppercase mb-3" for="city">Town / City</label>
+                <input class="form-control form-control-lg" id="city" type="text">
+            </div>
+            <div class="col-lg-6 form-group">
+                <label class="text-small text-uppercase mb-3" for="state">State / County</label>
+                <input class="form-control form-control-lg" id="state" type="text">
+            </div>
+            <div class="col-lg-12 form-group">
+                <div class="custom-control custom-checkbox">
+                <input class="form-check-input" id="alternateAddressCheckbox" type="checkbox">
+                <label class="custom-control-label text-small mb-3" for="alternateAddressCheckbox">Alternate billing address</label>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="row d-none" id="alternateAddress">
+                <div class="col-12 mt-4">
+                    <h2 class="h4 text-uppercase mb-4">Alternative billing details</h2>
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label class="text-small text-uppercase mb-3" for="firstName2">First name</label>
+                    <input class="form-control form-control-lg" id="firstName2" type="text" placeholder="Enter your first name">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label class="text-small text-uppercase mb-3" for="lastName2">Last name</label>
+                    <input class="form-control form-control-lg" id="lastName2" type="text" placeholder="Enter your last name">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label class="text-small text-uppercase mb-3" for="email2">Email address</label>
+                    <input class="form-control form-control-lg" id="email2" type="email" placeholder="e.g. Jason@example.com">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label class="text-small text-uppercase mb-3" for="phone2">Phone number</label>
+                    <input class="form-control form-control-lg" id="phone2" type="tel" placeholder="e.g. +02 245354745">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label class="text-small text-uppercase mb-3" for="company2">Company name (optional)</label>
+                    <input class="form-control form-control-lg" id="company2" type="text" placeholder="Your company name">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label class="text-small text-uppercase mb-3" for="country2">Country</label>
+                    <select class="form-select form-control form-control-lg" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-lg-12 form-group">
+                    <label class="text-small text-uppercase mb-3" for="address2">Address line 1</label>
+                    <input class="form-control form-control-lg" id="address2" type="text" placeholder="House number and street name">
+                </div>
+                <div class="col-lg-12 form-group">
+                    <label class="text-small text-uppercase mb-3" for="address2">Address line 2</label>
+                    <input class="form-control form-control-lg" id="addressalt2" type="text" placeholder="Apartment, Suite, Unit, etc (optional)">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label class="text-small text-uppercase mb-3" for="city3">Town / City</label>
+                    <input class="form-control form-control-lg" id="city3" type="text">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label class="text-small text-uppercase mb-3" for="state4">State/County</label>
+                    <input class="form-control form-control-lg" id="state4" type="text">
+                </div>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <h2 class="h4 text-uppercase mb-4">Payment Method</h2>
+            </div>
+            <div class="col-lg-6 form-group">
+                <div class="custom-control custom-checkbox paymentMethod">
+                <input value="pay-cred" class="form-check-input" id="paymentCred" name="paymentMethod" type="radio">
+                <label class="custom-control-label text-small mb-3" for="paymentCred">Credit / Debit Card</label>
+                </div>
+            </div>
+            <div class="col-lg-6 form-group">
+                <div class="custom-control custom-checkbox paymentMethod">
+                <input value="pay-paypal" class="form-check-input" id="paymentPaypal" name="paymentMethod" type="radio">
+                <label class="custom-control-label text-small mb-3" for="paymentPaypal">Paypal</label>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="row payment" id="pay-cred">
+                    <div class="col-12 mt-4">
+                        <h2 class="h4 text-uppercase mb-4">Card Details</h2>
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <div class="custom-control custom-checkbox">
+                        <label class="custom-control-label text-small mb-3" for="cardno">Card Number</label>
+                        <input class="form-control form-control-lg" id="cred-num" type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 form-group d-flex align-items-center mt-5" style="justify-content: space-evenly;">
+                        <div class="custom-control custom-checkbox">
+                            <select style="padding-right: 1.8rem;" id="cred-mm" class="mb-3 form-select form-control form-control-lg" aria-label="Default select example">
+                                <option selected>MM</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <select style="padding-right: 1.8rem;" class="form-select form-control form-control-lg mb-3" id="cred-yy" aria-label="Default select example">
+                                <option selected>YY</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                            </select>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 form-group">
+                    </div>
+                    <div class="col-lg-3 form-group">
+                        <div class="custom-control custom-checkbox">
+                        <label class="custom-control-label text-small mb-3" for="cred-ccv">CVV</label>
+                        <input class="form-control form-control-lg" id="cred-ccv" type="text">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 form-group mb-3" style="margin-top: 5rem;">
+                        <div class="active" id="paypal">
+                            <div class="floating">
+                                <div class="thickness"></div>
+                                <div class="thickness"></div>
+                                <div class="thickness"></div>
+                                <div class="card_body">
+                                <div class="paypal_center svg"></div>
+                                <div class="logo svg"></div>
+                                <div class="paywave svg"></div>
+                                <div class="chips svg"></div>
+                                <div class="card_no text">
+                                    <span id="paypal-num">1234-5678-9012-3456</span>
+                                </div>
+                                <div class="valid text">
+                                    VALID <br> THUR
+                                </div>
+                                <div class="valid_date text">
+                                    <span id="paypal-mm">02</span>/<span id="paypal-yy">23</span>
+                                </div>
+                                <div class="holder text">CVV: <span id="paypal-ccv">776</span></div>
+                                <div class="mastercard_icon svg"></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 payment" id="pay-paypal">
+                <h1>Hello</h1>
+            </div>
+            <div class="col-lg-12 form-group">
+                <button class="btn btn-dark" type="submit">Place order</button>
+            </div>
+            </div>
+        </form>
+        </div>
+        <!-- ORDER SUMMARY-->
+        <div class="col-lg-4">
+        <div class="card border-0 rounded-0 p-lg-4 bg-light">
+            <div class="card-body">
+            <h5 class="text-uppercase mb-4">Your order</h5>
+            <ul class="list-unstyled mb-0">
+                <li class="d-flex align-items-center justify-content-between"><strong class="small font-weight-bold">Red digital smartwatch</strong><span class="text-muted small">$250</span></li>
+                <li class="border-bottom my-2"></li>
+                <li class="d-flex align-items-center justify-content-between"><strong class="small font-weight-bold">Gray Nike running shoes</strong><span class="text-muted small">$351</span></li>
+                <li class="border-bottom my-2"></li>
+                <li class="d-flex align-items-center justify-content-between"><strong class="text-uppercase small font-weight-bold">Total</strong><span>$601</span></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+</div>
+
+{% endblock content %}
+
+
+
+{% block js_links %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/checkout.js' %}"></script>
+    <script src="{% static 'js/paypal.js' %}"></script>
+{% endblock js_links %}

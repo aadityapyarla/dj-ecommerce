@@ -1,0 +1,23 @@
+Plugins usedd in this web are as follows:
+
+1. Jquery
+JS -https://code.jquery.com/jquery-3.6.0.min.js
+2. BootStrap 5.0
+CSS - https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css
+JS - https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js
+3. LightBox 2.0
+CSS - https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css
+JS -  https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js
+4. Owl Carousel 2
+CSS - https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css
+CSS - https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css
+JS - https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
+5. Owl Carousel Thubms
+NPM - npm install owl.carousel2.thumbs
+6. Font Awesome 5
+CSS - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css
+7. Ez Plus Zoom In
+DOWNLOAD - https://www.jqueryscript.net/zoom/Image-Zoom-Viewer-Gallery-Plugin-jQuery-ezPlus.html
+9. Swiper JS
+CSS- https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css
+JS - https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js

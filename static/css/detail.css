@@ -1,0 +1,225 @@
+form .stars {
+    background: url("../images/stars.png") repeat-x 0 0;
+    width: 150px;
+}
+
+form .stars input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+form .stars input[type="radio"].star-5:checked ~ span { width: 100%; }
+
+form .stars input[type="radio"].star-4:checked ~ span { width: 80%; }
+
+form .stars input[type="radio"].star-3:checked ~ span { width: 60%; }
+
+form .stars input[type="radio"].star-2:checked ~ span { width: 40%; }
+
+form .stars input[type="radio"].star-1:checked ~ span { width: 20%; }
+
+form .stars label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0!important;
+    padding: 0!important;
+    text-indent: -999em;
+    float: left;
+    position: relative;
+    z-index: 10;
+    background: transparent!important;
+    cursor: pointer;
+}
+
+form .stars label:hover ~ span { background-position: 0 -30px; }
+
+form .stars label.star-5:hover ~ span { width: 100% !important; }
+
+form .stars label.star-4:hover ~ span { width: 80% !important; }
+
+form .stars label.star-3:hover ~ span { width: 60% !important; }
+
+form .stars label.star-2:hover ~ span { width: 40% !important; }
+
+form .stars label.star-1:hover ~ span { width: 20% !important; }
+
+form .stars span {
+    display: block;
+    width: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 30px;
+    background: url("../images/stars.png") repeat-x 0 -60px;
+    -webkit-transition: -webkit-width 0.5s;
+    -moz-transition: -moz-width 0.5s;
+    -ms-transition: -ms-width 0.5s;
+    -o-transition: -o-width 0.5s;
+    transition: width 0.5s;
+}
+
+.quantity {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: inherit;
+}
+
+.quantity input {
+    width: 2rem;
+    text-align: center;
+}
+
+.quantity button {
+    background: none;
+    border: none;
+    width: 1rem;
+    outline: none;
+    display: inline-block;
+}
+
+.detail{
+    color: black;
+}
+
+.detail a, .detail span{
+    color: black;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.quantity button .fa{
+    font-weight: 900;
+    color: black;
+}
+
+.fa.fa-heart{
+    font-weight: 900;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+#wishlist{
+    text-decoration: none;
+    outline: none !important;
+    border: 1px solid transparent !important;
+}
+#wishlist:hover{
+    text-decoration: underline;
+}
+
+.quantity-parent {
+    padding-top: 0.80rem!important;
+    padding-bottom: 10px !important;
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.content {
+    width: 420px;
+}
+
+.ratings {
+    background-color: #fff;
+    padding: 54px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px #E0E0E0
+}
+
+.product-rating {
+    font-size: 50px
+}
+
+.stars i {
+    font-size: 18px;
+    color: #28a745
+}
+
+.rating-text {
+    margin-top: 10px
+}
+
+.rating-bar {
+    width: 20rem;
+    padding: 8px;
+}
+
+.rating-label {
+    font-weight: bold;
+}
+
+.rating-row td {
+    padding-bottom: 20px
+}
+
+.border-md {
+    border-width: 2px;
+}
+
+.form-control:not(select) {
+    padding: 0.8rem 0.5rem;
+}
+
+select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+
+.input-group-text {
+    padding: 1.1rem .75rem;
+    border-right: none;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.rat {
+    font-family: 'Aladin', cursive;
+    font-size: 2.5rem;
+}
+
+.teribble {
+    color: #dc3545; 
+}
+
+.excellent {
+    color: #0d6efd;
+}
+
+.poor {
+    color: #ffc107;
+}
+
+.average {
+    color: #0dcaf0;
+}
+
+.good {
+    color: #198754;
+}

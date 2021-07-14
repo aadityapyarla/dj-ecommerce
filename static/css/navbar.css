@@ -1,0 +1,250 @@
+.box-element{
+	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+
+#cart-icon{
+	width:35px;
+	display: inline-block;
+}
+
+#cart-container{
+	display: flex;
+}
+
+#cart-total{
+	display: block;
+	position: relative;
+    text-align: center;
+    top: -0.5rem;
+    color: #fff;
+    right: 0.9rem;
+    background-color: red;
+    width: 21px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+	margin-top: 10px;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.row-image{
+	width: 100px;
+}
+
+.form-field{
+	width:250px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.quantity{
+	display: inline-block;
+	font-weight: 700;
+	padding-right:10px;
+	
+
+}
+
+.chg-quantity{
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition:.1s;
+}
+
+.chg-quantity:hover{
+	opacity: .6;
+}
+
+
+.hidden{
+	display: none!important;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(158, 158, 158);
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+
+.progress {
+    height: 10px;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-control-underlined {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+nav.navbar .search-panel {
+    display: none;
+}
+
+nav.navbar .search-panel .search-inner {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(45, 48, 53, 0.95);
+    z-index: 9;
+}
+
+nav.navbar .search-panel .search-inner .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #8a8d93 !important;
+    cursor: pointer;
+}
+
+nav.navbar .search-panel .fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+    color: #8a8d93;
+}
+
+nav.navbar .search-panel .search-inner form {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+nav.navbar .search-panel .search-inner .form-group {
+    position: relative;
+}
+
+nav.navbar .search-panel .search-inner .submit {
+    background: none;
+    font-size: 2.3rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #8a8d93;
+    border: none;
+    font-weight: 700 !important;
+    
+}
+
+nav.navbar .search-panel .search-inner input {
+    background: none;
+    width: 100%;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 1px solid #444951 !important;
+    color: #8a8d93 !important;
+    outline: none !important;
+}
+
+nav.navbar .search-panel .search-inner input::-moz-placeholder {
+    font-family: "Muli", sans-serif;
+    font-weight: 300 !important;
+    color: #585a5f;
+}
+
+nav.navbar .search-panel .search-inner input::-webkit-input-placeholder {
+    font-family: "Muli", sans-serif;
+    font-weight: 300 !important;
+    color: #585a5f;
+}
+
+nav.navbar .search-panel .search-inner input:-ms-input-placeholder {
+    font-family: "Muli", sans-serif;
+    font-weight: 300 !important;
+    color: #585a5f;
+}
+
+@media (max-width: 1199px) {
+    nav.navbar .search-panel .search-inner form input {
+    font-size: 1.25rem !important;
+    }
+    nav.navbar .search-panel .search-inner form button.submit {
+    position: absolute;
+    font-size: 2rem;
+    top: 50px;
+    display: block;
+    width: 100%;
+    }
+}
+
+
+.btn-circle {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.btn-circle i {
+    position: relative;
+    top: -1px;
+}
+
+.btn-circle-sm {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9rem;
+}
+
+.btn-circle-lg {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.1rem;
+}
+
+.btn-circle-xl {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.3rem;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+
+nav.navbar {
+    padding: 11px 0 11px 0px !important;
+}

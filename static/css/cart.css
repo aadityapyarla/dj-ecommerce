@@ -1,0 +1,129 @@
+body {
+    background: #fff;
+    min-height: 100vh;
+}
+
+*a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.quantity {
+    display: -ms-flexbox;
+    display: flex !important;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: inherit;
+}
+
+.quantity input {
+    width: 2rem;
+    text-align: center;
+}
+
+.quantity button {
+    background: none;
+    border: none;
+    width: 1rem;
+    outline: none;
+    display: inline-block;
+}
+
+.detail{
+    color: black;
+}
+
+.detail a, .detail span{
+    color: black;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.quantity button .fa{
+    font-weight: 900;
+    color: black;
+}
+
+.fa.fa-heart{
+    font-weight: 900;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+#wishlist{
+    text-decoration: none;
+    outline: none !important;
+    border: 1px solid transparent !important;
+}
+#wishlist:hover{
+    text-decoration: underline;
+}
+
+.quantity-parent {
+    padding-top: 0.80rem!important;
+    padding-bottom: 10px !important;
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.media-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 900;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.reset-anchor {
+    color: inherit;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+h6, .h6 {
+    font-size: 1rem;
+}
+
+.btn {
+    font-weight: 400;
+    border: 1px solid transparent;
+    font-family: inherit;
+    padding: 0.375rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fa, .fas {
+    font-weight: 900;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

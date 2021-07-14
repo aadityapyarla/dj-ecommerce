@@ -1,0 +1,704 @@
+
+{% extends 'store/base.html' %}
+
+{% load static %}
+
+{% block css_links %}
+    
+    
+    <link rel="stylesheet" href="{% static 'css/store.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+{% endblock css_links %}
+
+<!-- -------------------------CSS LINK END----------------------------------------------- -->
+
+{% block content %}
+
+
+
+
+<div class="swiper-container swiper2">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img class="img-fluid d-block" src="https://content.shop4reebok.com/static/hero/NanoFlex_1920x800_18th_July_A.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img class="img-fluid d-block" src="https://content.shop4reebok.com/static/hero/RBK_EOSS_1920x800_Homepage_1st_June_A.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img height="100%" width="100%"  src="{% static 'images/summer.jpg' %}" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img class="img-fluid d-block" src="https://content.shop4reebok.com/static/hero/Reebok_X_Power_Rangers_1920x800_18th_June.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img class="img-fluid d-block" src="https://content.shop4reebok.com/static/hero/RBK_Outlet_1920x800_15th_Dec.jpg" alt="">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+
+<div class="cus-container mt-5 row d-flex" style="justify-content: space-evenly;align-items: flex-start">
+    <div class="col-md-4 col-sm-12 col-lg-4 bg-white rounded" style="width: auto !important;padding: 1% 2% 1% 2% !important;">
+        <div>
+
+            <h3>Shop By Necessity</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9fbd6cd9-86f6-4132-9f1f-4eefc0a5248c/air-zoom-superrep-2-hiit-class-shoe-fG7bRN.png" alt="">
+                <h6 class="text-left fw-bold fs-5">Training & Gym</h6>
+            </div>
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/794aeb88-b9a3-404c-9c6a-ef3f68184187/custom-nike-vapor-edge-pro-by-you.png" alt="">
+                <h6 class="text-left fw-bold fs-5">Football</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6ac2da2f-a9bf-4d10-8fa4-190efb3d9896/waffle-one-shoe-Z3BFbK.png" alt="">
+                <h6 class="text-left fw-bold fs-5">Lifestyle</h6>
+            </div>
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/195176/02/sv01/fnd/PNA/fmt/png/Fierce-2-Women's-Training-Shoes" alt="">
+                <h6 class="text-left fw-bold fs-5">Stylish</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-lg-4 bg-white rounded" style="width: auto !important;padding: 1% 2% 1% 2% !important;">
+        <div>
+
+            <h3>Shop By Time</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~PNA~others~KOP~Home~SS21~Aka+Boku~21SS_ECOM_MF_SP_BOKU_SplitHeroLeft_Mob_1536x1536_1.jpg/fmt/jpg/fmt/png" alt="">
+                <h6 class="text-left fw-bold fs-5">New Arrivals</h6>
+            </div>
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~PNA~others~KOP~Home~SS21~Mr+Doodle~21SS_Mr-Doodle_Additional-Imagery_Site_SplitHeroLeft_TabMob_1536x1536_1.jpg/fmt/jpg/fmt/png" alt="">
+                <h6 class="text-left fw-bold fs-5">Trending Now!</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~PNA~others~KOP~Home~SS21~Court+Rider+2K~21SS_Ecom_MF_BB_Court-Rider-NBA2k_FullBleedHero_Large_TabMob_1536x1536_Product.jpg/fmt/jpg/fmt/png" alt="">
+                <h6 class="text-left fw-bold fs-5">Classics</h6>
+            </div>
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~PNA~others~KOP~Home~SS21~Slick+Rick~6391_21_AW_ECOMM_SLICK_RICK_SITE_1536x1536.jpg/fmt/jpg/fmt/png" alt="">
+                <h6 class="text-left fw-bold fs-5">Old is Gold!</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-lg-4 bg-white rounded" style="width: auto !important;padding: 1% 2% 2% 2% !important;">
+        <div>
+
+            <h3>Shop By Category</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~PNA~others~KOP~Home~SS21~Pride~21SS_ECOM_MF_SP_Pride_ComingSoonHero_TabMob__1536x1536_2.jpg/fmt/jpg/fmt/png" alt="">
+                <h6 class="text-left fw-bold fs-5">Tokoyo Collection</h6>
+            </div>
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~PNA~others~KOP~Home~SS21~Mirage+Tech+~21SS_ECOM_MF_MIRAGE_DJ_Snake_HotSpotHero_TabMob__1536x1536_2.jpg/fmt/jpg/fmt/png" alt="">
+                <h6 class="text-left fw-bold fs-5">Ultraboost 21</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src='https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~PNA~others~KOP~Home~SS21~Court+Rider+2K~21SS_Ecom_MF_BB_Court-Rider-NBA2k_FullBleedHero_Large_TabMob_1536x1536_Product.jpg/fmt/jpg/fmt/png' alt="">
+                <h6 class="text-left fw-bold fs-5">Feel the Zx</h6>
+            </div>
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~PNA~others~KOP~Home~SS21~White+Castle~21_SS_WHITE+CASTLE+LAUNCH_SITE_Trending-Inline_Mobile_1536x1536_0000_1.jpg/fmt/jpg/fmt/png" alt="">
+                <h6 class="text-left fw-bold fs-5">Sandal Sessions</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cus-container row d-flex" style="justify-content: space-evenly;align-items: flex-start">
+    <div class="col-md-4 col-sm-12 col-lg-4 bg-white rounded" style="width: auto !important;padding: 1% 2% 2% 2% !important;">
+        <div>
+
+            <h3>Back to school</h3>
+        </div>
+        <img style="width: 25rem;" src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_656,c_limit/969d29d9-6bb9-4777-9c9d-7c6f5a300441/nike-back-to-school.jpg" alt="">
+        
+    </div>
+    <div class="col-md-4 col-sm-12 col-lg-4 bg-white rounded" style="width: auto !important;padding: 1% 2% 1% 2% !important;">
+        <div>
+
+            <h3>Shop By Gender</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2d05bbb7-eb14-4563-b367-93961bb54294/nikecourt-dri-fit-slam-mens-tennis-shorts-WzZCnq.png" alt="">
+                <h6 class="text-left fw-bold fs-5">Men</h6>
+            </div>
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ca6d0239-8596-454c-b049-87832b8657f8/air-womens-leggings-56wf3q.png" alt="">
+                <h6 class="text-left fw-bold fs-5">Women</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/86d934fc-bc51-455e-9bd6-7f4627f89fb4/sportswear-big-kids-boys-shorts-0WC2ZQ.png" alt="">
+                <h6 class="text-left fw-bold fs-5">Teens</h6>
+            </div>
+            <div class="col-md-6" style="width: auto !important;">
+                <img height="185px" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3be47b8e-155a-47ce-bd96-64e1e2e89ddd/toddler-t-shirt-XMgcDv.png" alt="">
+                <h6 class="text-left fw-bold fs-5">Kid's</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 bg-white rounded" style="padding: 2% 2% 2% 2% !important;width: 460px;height: fit-content;">
+        <div>
+
+            <h4 class="mb-5" style="font-size: 2rem;"><strong> Sign in for your best experience</strong></h4>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary" type="button">Sign in securely</button>
+        </div>
+    </div>
+</div>
+
+<div class="cus-container px-4">
+<div class="swiper-container swiper1">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper" style="align-items: stretch !important;">
+    <!-- Slides -->
+    <div class="swiper-slide">
+        <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8daf5644-8b08-4496-89c4-02a474e8598c/nikecourt-zoom-vapor-cage-4-rafa-mens-hard-court-tennis-shoe-dMxMqL.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0ff5fd82-4191-4389-a1a0-08fc2de21080/nikecourt-react-vapor-nxt-womens-hard-court-tennis-shoe-j4FPd1.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cd5dbb1e-2dc2-41c2-9923-924696451965/nikecourt-vapor-lite-mens-hard-court-tennis-shoe-vbM3MN.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4a96472f-4441-4b55-aac8-eb599cffcda5/nikecourt-air-zoom-vapor-x-womens-hard-court-tennis-shoe-Fn0HKX.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a1aacfd9-9b11-4d9d-9ea7-24c4df34bbec/nikecourt-air-zoom-vapor-pro-mens-hard-court-tennis-shoe-wPkbb5.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="swiper-slide">
+        <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2f34c342-7436-47dd-9158-c067b3286894/nikecourt-air-zoom-gp-turbo-womens-hard-court-tennis-shoe-mVBZTQ.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0fe20f4-1273-4e93-bc29-3de5e4257a1e/nikecourt-vapor-lite-womens-hard-court-tennis-shoe-BBDkwS.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a8e24813-172a-4557-9c7a-a42338408a83/nikecourt-air-zoom-gp-turbo-womens-hard-court-tennis-shoe-mVBZTQ.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+    </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+</div>
+
+
+
+    <!-- First Row [Prosucts]-->
+<div class="cus-container px-4">
+    <h2 class="font-weight-bold mb-4">From the Shop</h2>
+    <div class="row pb-5 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ebc83d44-e8a6-494f-9fc4-c98656d70924/nikecourt-air-zoom-vapor-x-knit-mens-hard-court-tennis-shoe-KT8X3C.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/82f3d36d-f6b9-4d73-bddf-558da821846a/nikecourt-air-zoom-vapor-cage-4-mens-hard-court-tennis-shoe-gj2d2f.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6dc47979-a9ad-4822-98d3-c7201ee1d648/court-legacy-little-kids-shoe-Mb7npn.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d1f18629-93f5-4d05-9668-69b1146ad416/court-legacy-big-kids-shoe-RppBqt.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cus-container px-4">
+    <div class="bg-white rounded p-4">
+        <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWM_Covid19_Essentials_Msg_ENG_2X._CB664937545_.jpg" alt="">
+    </div>
+</div>
+
+
+<div class="cus-container px-4">
+    <div class="swiper-container swiper3">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" style="align-items: stretch !important;">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a1aacfd9-9b11-4d9d-9ea7-24c4df34bbec/nikecourt-air-zoom-vapor-pro-mens-hard-court-tennis-shoe-wPkbb5.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                        <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                        <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                        <ul class="list-inline m-0 p-0" style="font-size: large;">
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                        </ul>
+                        <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                    </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f11700bd-a0bb-46f4-b43b-5e187d5b28c7/nikecourt-react-vapor-nxt-mens-hard-court-tennis-shoe-FxT1HX.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                        <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                        <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                        <ul class="list-inline m-0 p-0" style="font-size: large;">
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                        </ul>
+                        <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                    </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/46d904bf-457d-4818-80b0-801a5970de9d/nikecourt-air-zoom-gp-turbo-naomi-osaka-womens-hard-court-tennis-shoe-b6pbVp.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                        <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                        <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                        <ul class="list-inline m-0 p-0" style="font-size: large;">
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                        </ul>
+                        <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                    </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4a96472f-4441-4b55-aac8-eb599cffcda5/nikecour" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                        <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                        <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                        <ul class="list-inline m-0 p-0" style="font-size: large;">
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                        </ul>
+                        <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                    </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f19c9e8f-6006-4c46-8d60-97d5c71b3952/nikecourt-air-zoom-vapor-pro-womens-hard-court-tennis-shoe-RRbTJl.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                        <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                        <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                        <ul class="list-inline m-0 p-0" style="font-size: large;">
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                        </ul>
+                        <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                    </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5085d3af-10dd-4e55-a126-90126e176ffc/nikecourt-jr-lite-2-big-kids-tennis-shoe-wcR5Vm.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                        <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                        <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                        <ul class="list-inline m-0 p-0" style="font-size: large;">
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                        </ul>
+                        <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                    </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/83bc0a6c-73b4-4f4b-9e73-ef604b22b2d4/nikecourt-zoom-vapor-x-air-max-95-mens-tennis-shoe-MbhDCb.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                        <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                        <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                        <ul class="list-inline m-0 p-0" style="font-size: large;">
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                        </ul>
+                        <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                    </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b71e15a1-face-448a-80e2-288f30a04036/nikecourt-air-zoom-vapor-cage-4-mens-hard-court-tennis-shoe-DHsDCM.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                        <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                        <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                        <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                        <ul class="list-inline m-0 p-0" style="font-size: large;">
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                            <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                        </ul>
+                        <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    </div>
+    
+<div class="cus-container px-4">
+    <h2 class="font-weight-bold mb-4">New Arrivals</h2>
+    <div class="row pb-5 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ebc83d44-e8a6-494f-9fc4-c98656d70924/nikecourt-air-zoom-vapor-x-knit-mens-hard-court-tennis-shoe-KT8X3C.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/82f3d36d-f6b9-4d73-bddf-558da821846a/nikecourt-air-zoom-vapor-cage-4-mens-hard-court-tennis-shoe-gj2d2f.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6dc47979-a9ad-4822-98d3-c7201ee1d648/court-legacy-little-kids-shoe-Mb7npn.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h6> <a href="#" style="text-decoration: none; color: coral;">Sustainable Material</a></h6>
+                    <h5> <a href="#" class="text-dark">Awesome product</a></h5>
+                    <p class="m-0" style="color: gray;">Men's har court tennis shoe.</p>
+                    <p class="m-0 p-0" style="position: relative;color: gray;"><span>4</span>&nbsp;sizes & <span>3</span>&nbsp;colors</p>
+                    <ul class="list-inline m-0 p-0" style="font-size: large;">
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star small text-warning"></i></li>
+                        <li class="list-inline-item m-0" style="font-size: 1rem;margin: 0;"><p>(<span>797</span>)</p></li>
+                    </ul>
+                    <h5 class="m-0 p-0">&#8377;<span>5689</span></h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src="{% static 'images/off.png' %}" alt="" class="img-fluid d-block mx-auto mb-3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}
+
+<!-- -------------------------CONTENT LINK END----------------------------------------------- -->
+
+
+{% block js_links %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/store.js' %}"></script>
+    
+
+{% endblock js_links %}
+
+<!-- -------------------------JS LINK END----------------------------------------------- -->
