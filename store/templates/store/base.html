@@ -7,20 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Aaditya Pyarla</title>
     <link rel="shortcut icon" href="{% static 'images/shopping.png' %}" type="image/x-icon">
-    
+
     {% block css_links %}
-        
+
     {% endblock css_links %}
 
     <!-- Defualt css links -->
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 
-    
-    
+    <script type="text/javascript">
+        var user = '{{ request.user }}'
+        function getToken(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        const csrftoken = getToken('csrftoken');
+    </script>
+
 </head>
 <body>
-    
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
         <a class="navbar-brand col-md-3 align-items-center d-flex justify-content-center" href="/" style="font-size: 25px;">
@@ -72,15 +90,15 @@
                 <li><a class="dropdown-item" href="#">Analytics</a></li>
                 </ul>
             </div>
-            <button class="btn btn-outline-light" style="margin-right: 3% !important;">Login</button>     
+            <button class="btn btn-outline-light" style="margin-right: 3% !important;">Login</button>
             <button type="button" class="btn btn-warning">Sign-up</button>
             <div class="list-inline-item mr-3" style="margin-right: 3% !important;"></div>
                 <button class="btn btn-circle btn-circle m-1 position-relative">
                     <a href="{% url 'cart' %}">
-                        <img  id="cart-icon" src="{% static 'images/cart.png' %}" style="margin-bottom: 4px;"> 
+                        <img  id="cart-icon" src="{% static 'images/cart.png' %}" style="margin-bottom: 4px;">
                         <span class="position-absolute top-5 translate-middle badge rounded-pill bg-danger"
                         style="border-radius: 50% !important;top: 7px !important;left: 85%!important; height: 22px; background-color: red !important;">
-                            0
+                            {{ cartItems }}
                             <span class="visually-hidden">unread messages</span>
                         </span>
                     </a>
@@ -97,19 +115,19 @@
         </div>
     </form>
     </div>
-</div> 
+</div>
 </nav>
-    
-        
+
+
 
 
     {% block content %}
-        
+
     {% endblock content %}
 
-    
-    
-<footer class="bg-dark pt-5">
+
+
+<footer class="bg-dark mt-5 pt-5">
     <div class="container py-5">
         <div class="row py-4">
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
@@ -166,11 +184,12 @@
         </div>
     </div>
 </footer>
-        
-    
+
+
     {% block js_links %}
-        
+
     {% endblock js_links %}
     <script src="{% static 'js/navbar.js' %}"></script>
+    <script src="{% static 'js/addtocart.js' %}"></script>
 </body>
 </html>
